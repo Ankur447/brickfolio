@@ -30,13 +30,13 @@ const App = () => {
       
       
       {/* Define the routes */}
-      <Routes>
+      {/* <Routes> */}
         {/* <Route path="/" element={<Home />} /> */}
-        <Route path="/login" element={<Login />} />
-        <Route path="/shortlist" element={<Shortlist />} />
-        {/* Handle 404s */}
-        <Route path="*" element={<NotFound />} />
-      </Routes>
+        {/* <Route path="/login" element={<Login />} /> */}
+        {/* <Route path="/shortlist" element={<Shortlist />} /> */}
+        
+        {/* <Route path="*" element={<NotFound />} /> */}
+      {/* </Routes> */}
     </Router>
   );
 };

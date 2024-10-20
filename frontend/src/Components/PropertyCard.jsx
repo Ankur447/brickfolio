@@ -23,22 +23,22 @@ const PropertyCard = () => {
                 src={propertyImage}
                 alt="Property"
               />
-              <div className="p-4 w-2/3">
-                {" "}
+              <div className=" w-2/3">
+
                 {/* Makes the text content take up the remaining width */}
                 <div className="flex justify-between items-center mb-2">
-                  <h2 className="text-lg font-bold">{property.title}</h2>
-                  <span className="bg-[#FDE7D7] px-2 py-1 rounded-md text-sm sm:text-xs">
+                  <h2 className="text-lg px-3 p-2 font-bold">{property.title}</h2>
+                  <span className="bg-[#FDE7D7] px-2 py-05 rounded-md ">
                     Ready To Move
                   </span>
                 </div>
-                <p className="text-sm text-gray-600 mb-4">
+                <p className="text-sm px-3 text-gray-600 mb-4">
                   <FontAwesomeIcon icon={faLocationPin} className="mr-2" />
                   {property.location}
                 </p>
-                <p className="font-medium mb-2">Configuration</p>
+                <p className="font-medium px-3 mb-2">Configuration</p>
                 {/* Configuration Carousel */}
-                <div className="flex overflow-x-auto gap-2 pb-2 hide-scrollbar">
+                <div className="flex overflow-x-auto gap-2 pb-2 px-3 hide-scrollbar">
                   {" "}
                   {/* Add hide-scrollbar to remove default scrollbar */}
                   {property.configurations.map((config, configIndex) => (
@@ -63,7 +63,7 @@ const PropertyCard = () => {
                   ))}
                 </div>
                 {/* other info  */}
-                <div className="flex gap-2 mt-4">
+                <div className="px-3 flex gap-2 mt-4">
                   <span className="text-sm bg-[#FFF6EF] text-[#FF7A00] px-3 py-1 rounded">
                     {property.emiInfo}
                   </span>
@@ -71,7 +71,7 @@ const PropertyCard = () => {
                     {property.brokerage}
                   </span>
                 </div>
-                <div className="flex items-center justify-between mt-4 pt-4 border-t">
+                <div className="flex items-center justify-between mt-4 px-3 py-3 pt-4 border-t">
                   <div className="flex items-center">
                     <img
                       src={kumar}
@@ -84,7 +84,7 @@ const PropertyCard = () => {
                     </div>
                   </div>
                   <div className="flex gap-2">
-                    <button className="px-4 py-2 text-sm font-medium bg-white border border-gray-300 rounded-md hover:bg-gray-50">
+                    <button className="px-4 py-2 text-sm font-medium bg-white border border-black rounded-md hover:bg-gray-50">
                       View More
                     </button>
                     <button className="px-4 py-2 text-sm font-medium text-white bg-orange-500 rounded-md hover:bg-orange-600">
@@ -100,33 +100,33 @@ const PropertyCard = () => {
           <div className="hidden sm:flex">
             <div className="shrink-0">
               <img
-                className="h-96 w-full object-cover p-4"
+                className="mt-6 h-auto w-full object-cover p-4 "
                 src={propertyImage}
                 alt="Property"
               />
             </div>
-            <div className="flex-1 p-6">
+            <div className="flex-1">
               <div className="flex justify-between items-center">
-                <div className="flex items-center mr-24">
-                  <div className="uppercase tracking-wide text-xl text-black font-extrabold">
+                <div className="flex items-center mr-24 ">
+                  <div className="uppercase mt-8 tracking-wide flex px-6 py-3 text-xl text-black font-extrabold">
                     {property.title}
                   </div>
-                  <div className="bg-[#F3FFDA] text-xs rounded-sm p-1 text-gray-400">
+                  <div className="bg-[#F3FFDA] mt-6 text-xs rounded-sm p-1 text-gray-400">
                     RERA
                   </div>
                 </div>
-                <div className="bg-[#FDE7D7] px-3  font-semibold rounded-md py-1">
+                <div className="bg-[#FDE7D7] mt-6 px-3 text-xs text-nowrap  font-semibold rounded-sm py-1">
                   Ready To Move
                 </div>
               </div>
 
-              <p className="text-sm text-gray-600 mt-2">
+              <p className="text-sm text-gray-600 mt-2 px-6">
                 <FontAwesomeIcon icon={faLocationPin} className="mr-2" />
                 {property.location}
               </p>
 
-              <p className="mt-4 font-medium">Configuration</p>
-              <div className="mt-4 flex gap-4">
+              <p className="mt-4 font-medium px-6 ">Configuration</p>
+              <div className="mt-4 flex gap-4 px-6">
                 {property.configurations.map((config, configIndex) => (
                   <div
                     key={configIndex}
@@ -149,7 +149,7 @@ const PropertyCard = () => {
                 ))}
               </div>
 
-              <div className="flex gap-2 mt-4">
+              <div className="flex gap-2 mt-4 px-6">
                 <span className="text-sm bg-[#FFF6EF] text-[#FF7A00] px-3 py-1 rounded">
                   {property.emiInfo}
                 </span>
@@ -158,7 +158,7 @@ const PropertyCard = () => {
                 </span>
               </div>
 
-              <div className="mt-8 flex justify-between items-center">
+              <div className="  flex justify-between items-center p-6">
                 <div className="flex items-center">
                   <img
                     src={kumar}
