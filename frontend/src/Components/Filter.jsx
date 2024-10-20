@@ -22,7 +22,7 @@ const FilterSelect = ({ options, defaultOption, onChange, selectedValue }) => {
 
 const Filter = () => {
   const locations = ["Kharadi", "Viman Nagar", "Kalyani Nagar"];
-  const priceRange = ["₹0 - ₹5.00 Cr"];
+  const priceRange = ["₹0 - ₹5.00 Cr", "₹5 - ₹10 Cr"];
   const bhkTypes = ["1 BHK", "2 BHK", "3 BHK"];
   const propertyTypes = ["Apartment", "Villa", "Studio"];
   const saleTypes = ["New", "Resale"];
