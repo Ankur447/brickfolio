@@ -2,26 +2,39 @@ import React from 'react';
 
 const HeadingSection = () => {
   return (
-    <div className="bg-gray-100 py-4 px-6">
-      {/* Breadcrumb */}
-      <nav className="text-sm text-gray-600 mb-2">
-        <ol className="list-reset flex">
-          <li>
-            <a href="/" className="hover:text-blue-600">Home</a>
-            <span className="mx-2">›</span>
+    <div className="bg-[#F4F4F4] py-3 px-4 sm:py-4 sm: md:px-12">
+      {/* Breadcrumb Navigation */}
+      <nav className="mb-2 sm:mb-3" aria-label="Breadcrumb">
+        <ul className="flex items-center text-xs sm:text-sm text-gray-600 min-w-min">
+          <li className="flex-shrink-0">
+            <a 
+              href="/" 
+              className="hover:text-orange-500 transition duration-200"
+            >
+              Home
+            </a>
           </li>
-          <li>
-            <a href="/property-in-pune" className="hover:text-blue-600">Property in Pune</a>
-            <span className="mx-2">›</span>
+          <li className="flex-shrink-0 mx-2">&gt;</li>
+          <li className="flex-shrink-0">
+            <a 
+              href="/properties-in-pune" 
+              className="hover:text-orange-500 transition duration-200"
+            >
+              Property in Pune
+            </a>
           </li>
-          <li className="text-gray-800">Flats in Pune</li>
-        </ol>
+          <li className="flex-shrink-0 mx-2">&gt;</li>
+          <li className="flex-shrink-0">
+            <span className="text-gray-800 font-semibold">
+              Flats in Pune
+            </span>
+          </li>
+        </ul>
       </nav>
-
       {/* Main Heading */}
-      <h1 className="text-2xl font-bold text-gray-900">
-        Flats For Sale In Kharadi, Viman Nagar, Pune
-      </h1>
+        <h1 className="text-lg sm:text-xl md:text-2xl lg:text-3xl font-bold text-gray-900 ">
+          Flats For Sale In Kharadi, Viman Nagar, Pune
+        </h1>
     </div>
   );
 };

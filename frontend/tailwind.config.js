@@ -1,3 +1,4 @@
+
 /** @type {import('tailwindcss').Config} */
 export default {
   content: [
@@ -7,7 +8,7 @@ export default {
   theme: {
     extend: {
       screens: {
-        'sm': '640px',
+        'sm': '827px',
         'md': '1350px',
         // 'lg': '1024px',
         // 'xl': '1280px',
