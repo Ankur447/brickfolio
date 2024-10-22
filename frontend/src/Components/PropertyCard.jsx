@@ -38,7 +38,7 @@ const PropertyCard = () => {
                 </p>
                 <p className="font-medium px-3 mb-2">Configuration</p>
                 {/* Configuration Carousel */}
-                <div className="flex overflow-x-auto gap-2 pb-2 px-3 hide-scrollbar">
+                <div className="flex overflow-x-auto gap-2 pb-2 px-3 hide-scrollbar ">
                   {" "}
                   {/* Add hide-scrollbar to remove default scrollbar */}
                   {property.configurations.map((config, configIndex) => (
@@ -63,8 +63,8 @@ const PropertyCard = () => {
                   ))}
                 </div>
                 {/* other info  */}
-                <div className="px-3 flex gap-2 mt-4">
-                  <span className="text-sm bg-[#FFF6EF] text-[#FF7A00] px-3 py-1 rounded">
+                <div className="px-3 flex gap-2 mt-4 ">
+                  <span className="text-sm bg-[#FFF6EF] text-[#FF7A00] px-3 py-1 rounded ">
                     {property.emiInfo}
                   </span>
                   <span className="text-sm bg-[#FDE7D7] text-black px-3 py-1 rounded-full">
@@ -97,10 +97,10 @@ const PropertyCard = () => {
           </div>
 
           {/* Desktop Layout */}
-          <div className="hidden sm:flex">
+          <div className=" hidden sm:flex ">
             <div className="shrink-0">
               <img
-                className="mt-6 h-auto w-full object-cover p-4 "
+                className="mt-6 h-auto w-full object-cover p-4 transition duration-300 ease-in-out hover:scale-105"
                 src={propertyImage}
                 alt="Property"
               />
@@ -126,11 +126,11 @@ const PropertyCard = () => {
               </p>
 
               <p className="mt-4 font-medium px-6 ">Configuration</p>
-              <div className="mt-4 flex gap-4 px-6">
+              <div className="mt-4 flex gap-4 px-6 ">
                 {property.configurations.map((config, configIndex) => (
                   <div
                     key={configIndex}
-                    className="bg-[#FFF6EF] p-4 rounded-lg"
+                    className="bg-[#FFF6EF] p-4 rounded-lg transition duration-500 hover:scale-105 cursor-pointer"
                   >
                     <p className="text-2xl font-bold">{config.type}</p>
                     <div className="flex items-center mt-2">

@@ -6,9 +6,9 @@ const Home = () => {
   return (
     <div className="flex bg-gray-100 h-auto">
       <PropertyCard/>
-        <div className="hidden md:flex flex-col md:ml-10 w-auto ">
+        <div className="hidden md:flex flex-col md:ml-10 w-auto  ">
           {/* Main Card */}
-          <div className="bg-white shadow-lg border border-black rounded-lg p-4 mb-4 flex flex-col  items-center">
+          <div className="bg-white shadow-lg border border-black rounded-lg p-4 mb-4 flex flex-col  items-center transition duration-500 hover:scale-105 ">
             {/* Image Section */}
             <div className="flex flex-col space-y-2 mb-6">
               <img
@@ -31,7 +31,7 @@ const Home = () => {
             </p>
           </div>
           {/* Enquire Now Form */}
-          <div className="bg-white shadow-lg mt-12 border border-gray-300 rounded-lg p-4">
+          <div className="bg-white shadow-lg mt-12 border border-gray-300 rounded-lg p-4 transition duration-500 hover:scale-105">
             <h2 className="text-3xl text-center font-bold mb-4">Need Help?</h2>
             <h4 className="text-md text-center mb-6">
               Get in touch with Brickfolio Expert for free Consultation
