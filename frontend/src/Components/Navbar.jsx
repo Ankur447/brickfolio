@@ -56,7 +56,7 @@ const Navbar = ({ selectedValue, onChange }) => {
           {/* Search Input */}
           <input
             type="text"
-            placeholder="Add More..."
+            placeholder="Add More"
             className="flex-grow px-2 py-1.5 text-sm focus:outline-none"
           />
 
